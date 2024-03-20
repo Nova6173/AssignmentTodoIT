@@ -25,42 +25,52 @@ public class TodoItem {
 
     public int getId () {
         return id;
+
     }
 
     public void setId (int id) {
         this.id = id;
+
     }
 
     public String getTitle () {
         return title;
+
     }
 
     public void setTitle (String title) {
         this.title = title;
+
     }
 
     public String getTaskDescription () {
         return taskDescription;
+
     }
 
     public void setTaskDescription () {
         this.taskDescription = taskDescription;
+
     }
 
     public LocalDate getDeadline () {
         return deadline;
+
     }
 
     public void setDeadline (LocalDate deadline) {
         this.deadline = deadline;
+
     }
 
     public boolean isDone () {
         return done;
+
     }
 
     public void setDone (boolean done) {
         this.done = done;
+
     }
 
     public Person getCreator () {
@@ -69,6 +79,7 @@ public class TodoItem {
 
     public void setCreator (Person creator) {
         this.creator = creator;
+
     }
 
     // Summary method
@@ -79,5 +90,6 @@ public class TodoItem {
     // Overdue method
     public boolean isOverdue () {
         return LocalDate.now ().isAfter (deadline);
+
     }
 }
