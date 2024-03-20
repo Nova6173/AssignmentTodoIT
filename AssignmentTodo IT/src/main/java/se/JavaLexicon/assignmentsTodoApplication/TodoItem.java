@@ -3,6 +3,8 @@ package se.JavaLexicon.assignmentsTodoApplication;
 
 import java.time.LocalDate;
 
+// Fields
+
 public class TodoItem {
     private int id;
     private String title;
@@ -10,6 +12,7 @@ public class TodoItem {
     private LocalDate deadline;
     private boolean done;
     private Person creator;
+
 
     // Constructors
     public TodoItem (int id, String title, String taskDescription, LocalDate deadLine, boolean done, Person creator) {
@@ -20,6 +23,8 @@ public class TodoItem {
         this.creator = creator;
 
     }
+
+
 
 // Getters & setters for each field
 
@@ -86,6 +91,9 @@ public class TodoItem {
     public String getSummary () {
         return "{id: " + id + ", title: " + title + ", description: " + taskDescription + ", deadline: " + deadline + ", done: " + done + ", creator: " + creator.getFirstName () + " " + creator.getLastName () + "}";
     }
+
+
+
 
     // Overdue method
     public boolean isOverdue () {

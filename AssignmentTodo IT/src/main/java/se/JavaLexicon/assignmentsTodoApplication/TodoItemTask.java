@@ -1,16 +1,24 @@
 package se.JavaLexicon.assignmentsTodoApplication;
+
+
 //Fields
+
+
 public class TodoItemTask {
     private int id;
     private boolean assigned;
     private TodoItem todoItem;
     private Person assignee;
 
+
+
 //Constructors
 public TodoItemTask(int id, boolean assigned, TodoItem todoItem, Person assignee){
     this.id = id;
     this.todoItem = todoItem;
     this.assignee = assignee;
+
+
 
 }
 // Getters & setter for each field

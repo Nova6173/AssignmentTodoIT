@@ -2,11 +2,15 @@ package se.JavaLexicon.assignmentsTodoApplication;
 
 
 public class Person {
+
+
     // Fields
     private int id;
     private String firstName;
     private String lastName;
     private String email;
+
+
 
     // Constructor
     public Person(int id, String firstName, String lastName, String email) {
